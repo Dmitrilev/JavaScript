@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+    <script>
+      "use strict"
+      let flag = false
+       const vuosi = parseInt(prompt("Anna vuosi: "))
+      if (vuosi % 100 === 0) {
+        if ((vuosi % 4 === 0) && vuosi % 400 === 0) {
+            flag = true
+        }
+      }
+      else {
+        if (vuosi % 4 === 0) {
+          flag = true
+        }
+      }
+
+      if (flag) {
+        document.getElementById("result").textContent = `Year is a leap year `
+      }
+      else {
+        document.getElementById("result").textContent = `Year is not leap year `
+
+      }
+
+    </script>
+
+
+</body>
+</html>

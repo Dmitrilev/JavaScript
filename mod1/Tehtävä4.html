@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+
+    <script>
+        "use strict"
+    let faculty = ""
+        const name = prompt("Sano nimesi: ")
+        const randomluku = Math.floor(Math.random() * (4-1+1)) + 1
+        switch (randomluku) {
+          case 1:
+            faculty = "Gryffindor";
+            break
+          case 2:
+            faculty = "Slytherin";
+            break
+          case 3:
+            faculty = "Hufflepuff";
+            break
+          case 4:
+            faculty = "Ravenclaw";
+            break
+        }
+
+    document.getElementById("result").textContent = `${name}, you are ${faculty}.`;
+
+    </script>
+</body>
+</html>
