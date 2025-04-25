@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title> Example </title>
+    </head>
+    <body>
+        <p></p>
+        <script>
+        const response = confirm("Should I calculate the square root?")
+        if (response) {
+          const number = prompt("What is Number?")
+          if (number<0) {
+            document.querySelector("p").innerHTML = "The square root of a negative number is not defined"
+          }
+          else {
+            answer = Math.sqrt(number)
+            document.querySelector("p").innerHTML = `Answer is ${answer}`
+
+          }
+        }
+        else {
+          document.querySelector("p").innerHTML = "The square root is not calculated."
+
+        }
+        </script>
+    </body>
+</html>
